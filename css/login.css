@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    width: 100%;
+    padding: 12px;
+    text-decoration: inherit;
+    color: #fff;
+}
+.main{
+    border-radius: 1rem;
+    width: 900px;
+    height: 300px;
+    padding: 30px;
+    border: 1px solid #555;
+    background-color: #02282C;
+}
+button{
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+.btn-flex{
+    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+}
+
+.cancel{
+    background-color: #eeeeee;
+    color: black;
+    border-radius: 8px;
+    text-align: center;
+}
+.form{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+.log-center{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form input{
+    padding: 10px;
+    text-indent: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #555;
+}
+.message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 610px) {
+    .main{
+        width: 400px;
+    }
+}
+@media (max-width: 410px) {
+    .main{
+        width: 300px;
+    }
+    button{
+        padding: 10px;
+    }
+}

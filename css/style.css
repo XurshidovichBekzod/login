@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+button{
+    outline: none;
+}
+input{
+    outline: none;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+a{
+    position: relative;
+    text-decoration: inherit;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    transition: color .3s;
+}
+
+.header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: .3s;
+    color: white;
+     background-color: #002F34;
+    backdrop-filter: blur(50px);
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    position: relative;
+}
+.navbar__main{
+    text-transform: uppercase;
+    font-size: 22px;
+    flex: 1;
+    cursor: pointer;
+}
+.navbar__collection{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.navbar__item{
+    font-size: 14px;
+    font-family: 'Libre';
+    font-weight: 400;
+}
+.illustration__main{
+    display: flex;
+    margin-top: 60px;
+    gap: 50px;
+}
+.illustration__context{
+    width: 37%;
+}
+.illustration__body{
+    font-size: 36px;
+    font-family: 'Tenor';
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+.illustration__head{
+    font-size: 10px;
+    font-family: 'Libre';
+    font-weight: 400;
+    color: #999999;
+    text-transform: uppercase;    
+}
+.illustration__text{
+    font-family: 'Serif';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666666;
+    margin: 28px 0;
+}
+.illustration__by{
+    text-transform: uppercase;
+    font-family: 'Libre';
+    font-size: 10px;
+    font-weight: 700;
+    color: #000000;
+}
+.card{
+    width: 400px;
+    padding: 25px 10px 50px 10px;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card__head{
+    font-size: 10px;
+    font-family: 'Libre';
+    font-weight: 400;
+    color: #999999;
+    text-transform: uppercase;
+    margin-top: 24px; 
+}
+.card__body{
+    font-size: 20px;
+    font-family: 'Tenor';
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 18px 0 15px 0;
+    width: 100%;
+}
+.card__context{
+    width: 100%;
+}
+.card__by{
+    text-transform: uppercase;
+    font-family: 'Libre';
+    font-size: 10px;
+    font-weight: 700;
+    color: #000000;
+}
+.latest{
+    margin-top: 85px;
+}
+.latest__card{
+    width: 300px;
+    padding: 25px 10px 50px 10px;
+}
+.fields{
+    margin-bottom: 65px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    font-size: 10px;
+    font-family: 'Libre';
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 12px;
+    padding: 20px 25px;
+    border: 1px solid black;
+    background: none;
+    margin-top: 50px;
+    transition: .3s;
+}
+.btn button:hover{
+    background: black;
+    color: white;
+    box-shadow: 0 0 50px black;
+    transform: scale(1.1);
+    transition: .3s;
+}
+.latest{
+    margin-bottom: 90px;
+}
+.footer{
+    background: rgb(20, 20, 20);
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Libre';
+    cursor: pointer;
+}
+
+.footer__next{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+.percent{
+    font-size: 10px;
+    font-family: 'Libre';
+    font-weight: 400;
+    color: #666666;
+}
+.footer__categories{
+    margin-top: 60px;
+}
+.categories__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Libre';
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+.types{
+    display: flex;
+}
+.type__sp{
+    color: white;
+    font-size: 14px;
+    font-family: 'Libre';
+    font-weight: 400;
+    text-align: start;
+}
+.tps__card{
+    width: 225px;
+}
+.sbc{
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    font-size: 10px;
+    font-family: 'Libre';
+    height: 50px;
+    width: 80px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+input{
+    width: 210px;
+    height: 50px;
+    padding-left: 22px;
+}
+.top a{
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    transform: rotate(90deg);
+    transition: .3s;
+}
+.top a::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: black;
+    scale: 1 0;
+    z-index: -1;
+    transition: .5s;
+    border-radius: 50%;
+}
+.top a:hover{
+    color: white;
+}
+.top a:hover::after{
+    scale: 1 1;
+    box-shadow: 0 0 50px black;
+}
+@media (max-width: 1000px) {
+    .illustration__main{
+        flex-direction: column;
+    }
+    .illustration__context{
+        width: 100%;
+        text-align: center;
+    }
+    .illustration__img{
+        text-align: center;
+    }
+    .email{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .illustration__img img{
+        width: 70%;
+    }
+    .illustration__main{
+        margin-top: 30px;
+    }
+    .illustration__head{
+        font-size: 8px;
+    }
+    .illustration__body{
+        font-size: 28px;
+        margin-top: 14px;
+    }
+    .illustration__text{
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 12px;
+        margin: 22px 0;
+    }
+}
+@media (max-width: 600px) {
+    .navbar__collection{
+        display: none;
+    }
+    
+    .illustration__head{
+        font-size: 5px;
+    }
+    .illustration__body{
+        font-size: 18px;
+        margin-top: 9px;
+    }
+    .illustration__text{
+        font-size: 8px;
+        font-weight: 200;
+        line-height: 12px;
+        margin: 14px 0;
+    }
+    .email{
+        display: none;
+    }
+    .type__sp{
+        font-size: 8px;
+    }
+    .footer__next{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 430px) {
+    .top a{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
